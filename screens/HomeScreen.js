@@ -10,7 +10,7 @@ export default function HomeScreen() {
     <View style={tw ` h-54px flex-row justify-between items-center mx-30px`}>
       <Text style={ tw`${colors.heading}  text-45px  `}>Salam</Text>
       <TouchableOpacity style={ tw`${colors.heading}  bg-white border-none bg-gray-200 rounded-full`} >
-        <Text>settings</Text>
+        <Text>sssss</Text>
       </TouchableOpacity>
     </View>
     </ScreenWrapper>

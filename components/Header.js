@@ -3,7 +3,6 @@ export default function App() {
       <View style={styles.container}>
       <text>Good Evening</text>
        
-       
       </View>
     );
   }

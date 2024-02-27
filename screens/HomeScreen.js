@@ -8,11 +8,12 @@ export default function HomeScreen() {
   return (
     <ScreenWrapper style={tw `flex-1`}>
     <View style={tw ` h-54px flex-row justify-between items-center mx-30px`}>
-      <Text style={ tw`${colors.heading}  text-45px  `}>Salam</Text>
+      <Text style={ tw`${colors.heading}  text-45px  `}></Text>
       <TouchableOpacity style={ tw`${colors.heading}  bg-white border-none bg-gray-200 rounded-full`} >
-        <Text>cc cv</Text>
+        <Text></Text>
       </TouchableOpacity>
     </View>
     </ScreenWrapper>
+
   )
 }

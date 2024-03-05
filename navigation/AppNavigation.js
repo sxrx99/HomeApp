@@ -6,7 +6,7 @@ import AddDeviceScreen from '../screens/AddDeviceScreen';
 import HelpScreen from '../screens/HelpScreen';
 import SmartSwitchScreen from '../screens/SmartSwitchScreen';
 import tw from 'twrnc';
-import { colors } from '../theme';
+import { colors } from '../theme/constants';
 const Tab = createBottomTabNavigator();
 
 export default function AppNavigation() {

@@ -21,15 +21,14 @@ export default function AppNavigation() {
 
 
 
-      <Tab.Screen  name="Home" component={HomeScreen} options={{
-        headerShown:false,
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="home" size={size} color={color} />
-        
-          ),
-          tabBarLabelStyle: { color: colors.navigation },
-        }}
-      />
+<Tab.Screen  name="Home" component={HomeScreen} options={{
+  headerShown:false,
+  tabBarIcon: ({ color, size }) => (
+    <Ionicons name="home" size={size} color={color}  />
+  ),
+  tabBarIconStyle: { alignItems: 'center' },
+}} />
+
       <Tab.Screen
         name="Add device"
         component={AddDeviceScreen}
@@ -39,7 +38,7 @@ export default function AppNavigation() {
             <Ionicons name="add-circle-outline" size={size} color={color} />
             
           ),
-          tabBarLabelStyle: { color: colors.navigation },
+        
         }}
       />
 
@@ -51,7 +50,7 @@ export default function AppNavigation() {
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="settings-outline" size={size} color={color} />
           ),
-          tabBarLabelStyle: { color: colors.navigation },
+         
         }}
       />
 
@@ -65,7 +64,7 @@ export default function AppNavigation() {
     tabBarIcon: ({ color, size }) => (
       <Ionicons name="help" size={size} color={color} />
     ),
-    tabBarLabelStyle: { color: colors.navigation }, // Set text color
+     // Set text color
   }}
 />
 

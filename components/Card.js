@@ -1,6 +1,15 @@
 import React from 'react';
 import tw from 'twrnc';
 import { View, Text } from 'react-native';
+<<<<<<< Updated upstream
+=======
+import { Ionicons } from '@expo/vector-icons';
+import { colors } from '../theme/constants.js';
+
+
+
+
+>>>>>>> Stashed changes
 
 const Card = ({ locationName, degrees, weather, H, L }) => {
   return (

@@ -4,7 +4,11 @@
     "@react-navigation/bottom-tabs": "^6.5.16",
     "@react-navigation/native": "^6.1.10",
     "@react-navigation/native-stack": "^6.9.18",
+    "axios": "^1.6.7",
     "expo": "~50.0.6",
+    "expo-font": "~11.10.3",
+    "expo-linear-gradient": "~12.7.2",
+    "expo-location": "~16.5.5",
     "expo-status-bar": "~1.11.1",
     "react": "18.2.0",
     "react-native": "0.73.4",
@@ -14,13 +18,11 @@
     "react-native-screens": "~3.29.0",
 
     "react-native-svg": "14.1.0",
+
     "react-native-switch-toggle": "^2.2.1",
 
     "tailwind-rn": "^4.2.0",
-    "twrnc": "^3.6.8",
-    "expo-font": "~11.10.3",
-    "expo-linear-gradient": "~12.7.2",
-    "expo-location": "~16.5.5"
+    "twrnc": "^3.6.8"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

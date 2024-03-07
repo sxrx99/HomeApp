@@ -1,13 +1,7 @@
 import React from 'react';
 import tw from 'twrnc';
 import { View, Text } from 'react-native';
-<<<<<<< Updated upstream
-import { loadFonts } from '../theme/constants.js';
-import { colors } from '../theme/constants.js';
-import { LinearGradient } from 'expo-linear-gradient';
-import  { useEffect, useState } from 'react';
-import * as Location from 'expo-location';
-=======
+
 import { useState , useEffect} from 'react';
 import { loadFonts } from '../theme/constants.js';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -31,7 +25,7 @@ useEffect(() => {
 
     let location = await Location.getCurrentPositionAsync({});
     setLocation(location);
->>>>>>> Stashed changes
+
 
     let addressResponse = await Location.reverseGeocodeAsync({
       latitude: location.coords.latitude,

@@ -1,11 +1,15 @@
 import React from 'react';
 import tw from 'twrnc';
 import { View, Text } from 'react-native';
-import { loadFonts } from '../theme/constants.js';
+
+
+import { Ionicons } from '@expo/vector-icons';
 import { colors } from '../theme/constants.js';
-import { LinearGradient } from 'expo-linear-gradient';
-import  { useEffect, useState } from 'react';
-import * as Location from 'expo-location';
+
+
+
+
+
 
 const Card = ({ locationName, degrees, weather, H, L }) => {
   const [location, setLocation] = useState(null);

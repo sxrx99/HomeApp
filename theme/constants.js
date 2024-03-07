@@ -17,14 +17,3 @@ export const colors = {
 
 
 
-export const loadFonts = () => {
-  const [fontsLoaded] = useFonts({
-    'Roboto' : require('../assets/fonts/Roboto-Medium.ttf'),
-    'Inter-light' :  require('../assets/fonts/Inter-ExtraLight.ttf'),
-    'Inter-thin' :  require('../assets/fonts/Inter-Thin.ttf'),
-    'Inter-Regular' :  require('../assets/fonts/Inter-Regular.ttf'),
-    'Inter-Bold' :  require('../assets/fonts/Inter-SemiBold.ttf'),
-  });
-
-  return fontsLoaded;
-};

@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Ionicons } from '@expo/vector-icons';
+
 import HomeScreen from '../screens/HomeScreen';
 import AddDeviceScreen from '../screens/AddDeviceScreen';
 import HelpScreen from '../screens/HelpScreen';
@@ -23,10 +23,7 @@ export default function AppNavigation() {
 
 <Tab.Screen  name="Home" component={HomeScreen} options={{
   headerShown:false,
-  tabBarIcon: ({ color, size }) => (
-    <Ionicons name="home" size={size} color={color}  />
-  ),
-  tabBarIconStyle: { alignItems: 'center' },
+  
 }} />
 
       <Tab.Screen
@@ -34,10 +31,7 @@ export default function AppNavigation() {
         component={AddDeviceScreen}
         options={{ 
           headerShown:false ,
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="add-circle-outline" size={size} color={color} />
-            
-          ),
+        
         
         }}
       />
@@ -47,9 +41,6 @@ export default function AppNavigation() {
         component={SmartSwitchScreen}
         options={{
           headerShown:false,
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="settings-outline" size={size} color={color} />
-          ),
          
         }}
       />
@@ -61,9 +52,7 @@ export default function AppNavigation() {
   component={HelpScreen}
   options={{
     headerShown: false,
-    tabBarIcon: ({ color, size }) => (
-      <Ionicons name="help" size={size} color={color} />
-    ),
+   
      // Set text color
   }}
 />

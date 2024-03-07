@@ -4,6 +4,12 @@ import tw from 'twrnc';
 import ScreenWrapper from '../components/ScreenWrapper';
 import { colors } from '../theme';
 import Card from '../components/Card.js';
+<<<<<<< Updated upstream
+=======
+import SettingImg from '../assets/svgs/settings.js';
+import { loadFonts } from '../theme/constants.js';
+import Flat from '../components/Flat.js';
+>>>>>>> Stashed changes
 
 export default function HomeScreen() {
   return (
@@ -14,8 +20,8 @@ export default function HomeScreen() {
           <Image source={require('../assets/Vector.png')}  style={tw `w-20px h-20px absolute`}/>
         </TouchableOpacity>
       </View>
-
       <Card locationName="Montreal" degrees="-10" weather="Partly Cloudy" H="2" L="12"/>
+      <Flat/>
     </ScreenWrapper> 
   );
 }

@@ -1,8 +1,14 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import tw from 'twrnc';
 import { View, Text } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { colors } from '../theme/constants.js';
+
+
+import { colors } from '../theme/constants';
+import { loadFonts } from '../theme/constants';
+import {LinearGradient} from 'expo-linear-gradient';
+import * as Location from 'expo-location';
+
+
 
 
 

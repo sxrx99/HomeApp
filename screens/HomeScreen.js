@@ -4,12 +4,11 @@ import tw from 'twrnc';
 import ScreenWrapper from '../components/ScreenWrapper';
 import { colors } from '../theme';
 import Card from '../components/Card.js';
-<<<<<<< Updated upstream
-=======
+
 import SettingImg from '../assets/svgs/settings.js';
 import { loadFonts } from '../theme/constants.js';
 import Flat from '../components/Flat.js';
->>>>>>> Stashed changes
+
 
 export default function HomeScreen() {
   return (

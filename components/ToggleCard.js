@@ -2,34 +2,40 @@ import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import tw from 'twrnc';
 import ToggleSwitch from './ToggleSwitch';
+import { loadFonts } from '../theme/constants';
+import { colors } from '../theme/constants';
 
+const ToggleCard = ({ name, devices }) => {
+  const styles = StyleSheet.create({
+    roundedBorder: {
+      borderRadius: 22,
+    },
+  });
 
-const ToggleCard = ({ name,devices }) => {
+  const renderDeviceText = () => {
+    return devices === '1' ? 'device' : 'devices';
+  };
 
-    const styles = StyleSheet.create({
-        roundedBorder: {
-            borderRadius: 22,
-        },
-    });
+  const fontsLoaded = loadFonts();
+  if (!fontsLoaded) {
+    return null; // Return null or a loading indicator until fonts are loaded
+  }
 
-    const renderDeviceText = () => {
-        if (devices === '1'){
-            return 'device';
-        }else{
-            return 'devices';
-        }
-    };
+  return (
+    <View style={[tw`w-155px h-164px border p-3 flex-col justify-between`, styles.roundedBorder]}>
+      <View>
+        <Text style={[tw` text-16px`, { fontFamily: 'Inter-Bold',color:colors.maingrey }]}>{name}</Text>
+        <Text style={[tw`pl-1 pt-2 text-16px`, { fontFamily: 'Inter-Regular' , color:colors.maingrey }]}>
+          {devices}
+          {renderDeviceText()}
+        </Text>
+      </View>
 
-    return (
-        <View style={[tw`w-155px h-164px border p-3 relative`, styles.roundedBorder]}>
-            <Text style={tw `text-16px font-bold`}>{name}</Text>
-            <Text style={tw `pl-1 pt-2 text-16px`}>{devices}{renderDeviceText()}</Text>
-            <ToggleSwitch/>
-        </View>
-        
-       
-    );
+      <View>
+        <ToggleSwitch />
+      </View>
+    </View>
+  );
 };
-
 
 export default ToggleCard;

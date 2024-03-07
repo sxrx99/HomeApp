@@ -4,9 +4,10 @@ import tw from 'twrnc';
 import ScreenWrapper from '../components/ScreenWrapper';
 import { colors } from '../theme/constants.js';
 import Card from '../components/Card.js';
+
 import SettingImg from '../assets/svgs/settings.js';
 import { loadFonts } from '../theme/constants.js';
-
+import Flat from '../components/Flat.js';
 
 export default function HomeScreen() {
   const fontsLoaded = loadFonts();
@@ -25,8 +26,8 @@ export default function HomeScreen() {
          <SettingImg/>
         </TouchableOpacity>
       </View>
-
       <Card locationName="Montreal" degrees="-10" weather="Partly Cloudy" H="2" L="12"/>
+      <Flat/>
     </ScreenWrapper> 
   );
 }

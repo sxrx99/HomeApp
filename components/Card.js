@@ -2,7 +2,7 @@ import React from 'react';
 import tw from 'twrnc';
 import { View, Text } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { colors } from '../theme';
+import { colors } from '../theme/constants.js';
 
 
 

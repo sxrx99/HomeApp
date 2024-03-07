@@ -30,3 +30,5 @@ export const loadFonts = () => {
 
   return fontsLoaded;
 };
+
+export const apiKey = 'cece9adfa8ee480b832130219240703';

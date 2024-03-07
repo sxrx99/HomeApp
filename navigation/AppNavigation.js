@@ -19,34 +19,24 @@ export default function AppNavigation() {
       <Tab.Navigator tabBarOptions={{
         activeTintColor: 'green',     // Color of the active tab
         inactiveTintColor: colors.navigation,  // Color of inactive tabs
-        style: { backgroundColor: 'white', },      
+        style: tw ``,      
         labelStyle: tw`font-bold`,   // Style of the tab labels 
         height:62,
        }}>
 
-
-
-<<<<<<< Updated upstream
-      <Tab.Screen  name="Home" component={HomeScreen} options={{
-        headerShown:false,
+         <Tab.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{ 
+          headerShown:false ,
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="home" size={size} color={color} />
-        
+            <HomeIcon />
+            
           ),
           tabBarLabelStyle: { color: colors.navigation },
         }}
       />
-=======
-<Tab.Screen  name="Home" component={HomeScreen} options={{
-  headerShown:false,
-  tabBarIcon: () => (
-    <HomeIcon/>
-  ),
-  tabBarIconStyle: { alignItems: 'center' },
-}} />
-
->>>>>>> Stashed changes
-      <Tab.Screen
+<Tab.Screen
         name="Add device"
         component={AddDeviceScreen}
         options={{ 

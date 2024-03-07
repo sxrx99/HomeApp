@@ -16,14 +16,9 @@ export default function HomeScreen() {
   }
   
   return (
-    <ScreenWrapper style={tw `flex-1`}>
-<<<<<<< Updated upstream
-      <View style={tw `flex-row justify-between items-center mx-30px mt-3`}>
-        <Text style={tw `${colors.heading} text-45px`}>Home</Text>
-=======
-      <View style={tw `flex-row justify-between items-center mx-30px mt-5`}>
-        <Text style={{fontFamily:'Inter-Bold', fontSize:40}}>Home</Text>
->>>>>>> Stashed changes
+    <ScreenWrapper style={tw `flex-1 flex-col`}>
+      <View style={tw `flex-row justify-between items-center mx-5 mt-5`}>
+        <Text style={{fontFamily:'Inter-Bold', fontSize:50}}>Home</Text>
         <TouchableOpacity style={tw `${colors.heading} flex justify-center items-center relative bg-black w-40px h-40px border-none bg-gray-200 rounded-full`}>
          <SettingImg/>
         </TouchableOpacity>

@@ -10,7 +10,7 @@ export default function LoginScreen() {
   const fontsLoaded = loadFonts();
   
   if (!fontsLoaded) {
-    return null; // Return null while fonts are loading
+    return null; 
   }
 
   return (
@@ -21,12 +21,12 @@ export default function LoginScreen() {
 
       <View style={tw `flex-row w-[250px] justify-between mt-[130px]`}>
 
-        {/* TouchableOpacity for adding a device */}
+        
         <TouchableOpacity style={[styles.button, { backgroundColor: colors.maingreen }]}>
           <Text style={tw `text-white `}>Add</Text>
         </TouchableOpacity>
 
-        {/* TouchableOpacity for canceling */}
+        
         <TouchableOpacity style={[styles.button, { backgroundColor: colors.navigation }]}>
           <Text style={tw `text-white `}>Cancel</Text>
         </TouchableOpacity>

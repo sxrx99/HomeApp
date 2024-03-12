@@ -26,8 +26,8 @@ export default function HomeScreen() {
          <SettingImg/>
         </TouchableOpacity>
       </View>
-      <Card locationName="Montreal" degrees="-10" weather="Partly Cloudy" H="2" L="12"/>
-      <Flat/>
+      <Card/>
+      <Flat/> 
     </ScreenWrapper> 
   );
 }

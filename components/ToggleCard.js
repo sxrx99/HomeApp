@@ -16,11 +16,6 @@ const ToggleCard = ({ name, devices }) => {
     return devices === '1' ? 'device' : 'devices';
   };
 
-  const fontsLoaded = loadFonts();
-  if (!fontsLoaded) {
-    return null; // Return null or a loading indicator until fonts are loaded
-  }
-
   return (
     <View style={[tw`w-155px h-164px border p-3 flex-col justify-between`, styles.roundedBorder]}>
       <View>

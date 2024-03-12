@@ -6,7 +6,7 @@ import { colors } from '../theme';
 import Card from '../components/Card.js';
 
 import SettingImg from '../assets/svgs/settings.js';
-import { loadFonts } from '../theme/constants.js';
+
 import Flat from '../components/Flat.js';
 
 

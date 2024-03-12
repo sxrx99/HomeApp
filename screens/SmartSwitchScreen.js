@@ -6,7 +6,7 @@ export default function SmartSwitchScreen() {
   return (
     <ScreenWrapper>
     <View>
-      <Text>Smart </Text>
+      <Text>Smart hh</Text>
     </View>
     </ScreenWrapper>
   )

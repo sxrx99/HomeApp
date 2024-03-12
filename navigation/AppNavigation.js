@@ -16,13 +16,13 @@ const Tab = createBottomTabNavigator();
 export default function AppNavigation() {
   return (
    
-      <Tab.Navigator tabBarOptions={{
-        activeTintColor: 'green',     // Color of the active tab
-        inactiveTintColor: colors.navigation,  // Color of inactive tabs
-        style: tw ``,      
-        labelStyle: tw`font-bold`,   // Style of the tab labels 
-        height:62,
-       }}>
+    <Tab.Navigator 
+    tabBarOptions={{
+      activeTintColor: '#58E3B0',     // Color of the active tab
+      inactiveTintColor: '#84908F',   // Color of inactive tabs
+      labelStyle: { fontWeight: 'bold' } // Style of the tab labels 
+    }}
+  >
 
          <Tab.Screen
         name="Home"

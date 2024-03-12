@@ -24,7 +24,7 @@ export default function HomeScreen() {
         </TouchableOpacity>
       </View>
       <Card/>
-      <Flat/>
+      {/* <Flat/> */}
 
     </ScreenWrapper> 
   );
